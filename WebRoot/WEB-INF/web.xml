@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>AllServlet</servlet-name>
+    <servlet-class>dbservlet.AllServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AllServlet</servlet-name>
+    <url-pattern>/AllServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>putin.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>StudentDao</display-name>
+    <servlet-name>StudentDao</servlet-name>
+    <servlet-class>dao.StudentDao</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentDao</servlet-name>
+    <url-pattern>/StudentDao</url-pattern>
+  </servlet-mapping>
+</web-app>
